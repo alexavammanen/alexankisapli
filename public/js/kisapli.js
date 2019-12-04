@@ -44,7 +44,7 @@ function draw() {
       if(kissa_olio.Y > windowWidth / 3 ){
         kissa_adoptio.splice(montakokuoli, 1);
         elami_kuoleplz =  elami_kuoleplz - 1;
-        if(elami_kuoleplz == 0){
+        if(elami_kuoleplz <= 0){
             gameOver();
         }
         //console.log("elämiä kuoleplz" + elami_kuoleplz);
@@ -52,7 +52,7 @@ function draw() {
       if(kissa_olio.X > windowWidth){
         kissa_adoptio.splice(montakokuoli, 1);
         makkaraa = makkaraa + 1;
-        elami_kuoleplz = elami_kuoleplz - 1;
+        //elami_kuoleplz = elami_kuoleplz - 1;
         //console.log("elämiä kuoleplz" + elami_kuoleplz);
 
       }
